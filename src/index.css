@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply bg-netflix-black text-white font-netflix;
+    overflow-x: hidden;
+  }
+
+  /* Netflix-style scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-netflix-black;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-netflix-gray/40 rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-netflix-gray/80;
+  }
+}
+
+@layer components {
+  /* Netflix-style button hover effects */
+  .netflix-btn {
+    @apply bg-netflix-red text-white px-5 py-2 font-medium rounded hover:bg-netflix-hover transition-colors duration-300;
+  }
+  
+  /* Netflix-style card transitions */
+  .netflix-card {
+    @apply relative overflow-hidden rounded cursor-pointer transition-all duration-300;
+  }
+  
+  .netflix-card:hover {
+    @apply scale-105 z-20 shadow-xl;
+  }
+  
+  /* Netflix row title animation */
+  .netflix-row-title {
+    @apply text-xl font-medium mb-2 overflow-hidden relative;
+  }
+  
+  .netflix-row-title::after {
+    content: '';
+    @apply absolute left-0 bottom-0 w-0 h-[2px] bg-netflix-red transition-all duration-300;
+  }
+  
+  .netflix-row-title:hover::after {
+    @apply w-full;
+  }
+}
+
+/* Netflix Sans Font (fallback to system fonts) */
+@font-face {
+  font-family: 'Netflix Sans';
+  font-weight: 100;
+  src: local('Netflix Sans Light'), local('NetflixSans-Light');
+}
+
+@font-face {
+  font-family: 'Netflix Sans';
+  font-weight: 400;
+  src: local('Netflix Sans Regular'), local('NetflixSans-Regular');
+}
+
+@font-face {
+  font-family: 'Netflix Sans';
+  font-weight: 700;
+  src: local('Netflix Sans Bold'), local('NetflixSans-Bold');
+}
+
+/* Page transitions */
+.page-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.page-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
