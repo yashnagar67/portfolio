@@ -7,6 +7,7 @@ import About from './componants/About';
 import Contact from './componants/Contact';
 import Footer from './componants/Footer';
 import { useState, useEffect } from 'react';
+import Maintenance from './pages/maintance';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -65,9 +66,7 @@ function App() {
       path: '/',
       element: (
         <PageWrapper>
-          <Navbar />
-          <HeroSection />
-          <Footer />
+          <Maintenance/>
         </PageWrapper>
       ),
     },
