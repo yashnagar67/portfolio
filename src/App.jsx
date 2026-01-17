@@ -5,7 +5,7 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeHighlight from 'rehype-highlight';
 import rehypeRaw from 'rehype-raw';
-import { sendMessageToGemini } from './services/ai';
+
 import { ownerData } from './data';
 import { BentoGrid } from './components/BentoGrid';
 

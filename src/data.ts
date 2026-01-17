@@ -1,6 +1,6 @@
 import { OwnerData } from './types';
 // @ts-ignore - Image imports
-import myimage from './componants/imgs/myimage.png';
+import myimage from './componants/imgs/yash.png';
 
 export const ownerData: OwnerData = {
   name: "Yash Nagar",
@@ -8,12 +8,12 @@ export const ownerData: OwnerData = {
   location: "Kota, India",
   locationImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVE26FWh_PxAMZH5pKUo8k3b9ZQ8LX4681rA&s",
   phone: "+91 8824926382",
-  resumeLink: "/Yash_Nagar_Resume.pdf",
+  resumeLink: "/myresume.pdf",
   bio: "Highly motivated Fresher MERN Stack Developer with hands-on experience in building responsive web apps using React.js & Tailwind CSS. Passionate about creating user-friendly interfaces and learning new technologies.",
   available: true,
   experienceYears: 0,
   email: "nagary811@gmail.com",
-  profileImage: "./public/IMG_20241225_171640-removebg-preview.png",
+  profileImage:myimage,
   techStack: [
     { name: "React", icon: "⚛️" },
     { name: "JavaScript", icon: "📜" },

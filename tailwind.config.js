@@ -13,6 +13,11 @@ export default {
         "accent-purple": "#8B5CF6",
         "background-light": "#F7F7F5",
         "background-dark": "#101622",
+        "netflix-red": "#E50914",
+        "netflix-hover": "#B20710",
+        "netflix-black": "#141414",
+        "netflix-light": "#333333",
+        "netflix-lightgray": "#B3B3B3",
         'cream': {
           50: '#FEFCF9',
           100: '#FDF8F0',
