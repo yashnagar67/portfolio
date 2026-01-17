@@ -8,6 +8,8 @@ import rehypeRaw from 'rehype-raw';
 
 import { ownerData } from './data';
 import { BentoGrid } from './components/BentoGrid';
+import myimage from './componants/imgs/yash.png';
+
 
 function App() {
   const [chatOpen, setChatOpen] = useState(false);
@@ -449,7 +451,7 @@ function App() {
                 <div className="flex items-center gap-3">
                   <div className="relative">
                     <img
-                      src="./public/IMG_20241225_171640-removebg-preview.png"
+                      src={myimage}
                       alt="Yash Nagar"
                       className="w-10 h-10 rounded-full object-cover border-2 border-blue-500"
                     />
