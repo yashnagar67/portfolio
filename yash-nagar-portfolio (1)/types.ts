@@ -1,0 +1,39 @@
+export interface Project {
+    id: string;
+    name: string;
+    description: string;
+    category: string;
+    imageUrl: string;
+    accentColor: string;
+}
+
+export interface OwnerData {
+    name: string;
+    role: string;
+    location: string;
+    bio: string;
+    available: boolean;
+    experienceYears: number;
+    email: string;
+    profileImage: string;
+    techStack: { name: string; icon: string }[];
+    projects: Project[];
+    socials: {
+        platform: string;
+        url: string;
+        username: string;
+    }[];
+    music: {
+        title: string;
+        artist: string;
+        isLive: boolean;
+    };
+    systemPrompt: string;
+}
+
+export interface ChatMessage {
+    id: string;
+    role: 'user' | 'model';
+    text: string;
+    timestamp: Date;
+}

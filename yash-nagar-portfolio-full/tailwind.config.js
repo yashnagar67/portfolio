@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   darkMode: "class",
   theme: {
     extend: {
@@ -13,14 +10,8 @@ export default {
         "accent-purple": "#8B5CF6",
         "background-light": "#F7F7F5",
         "background-dark": "#101622",
-        'cream': {
-          50: '#FEFCF9',
-          100: '#FDF8F0',
-          200: '#FAF0E1',
-          300: '#F5E4C8',
-        },
-      },
+      }
     },
   },
   plugins: [],
-} 
+}
